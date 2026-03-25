@@ -6,7 +6,7 @@ const LecturaSchema = new mongoose.Schema({
   turbidez: Number,
   nivel: Number,
   lluvia: String,
-  TextMetrics: Number,
+  temperatura: Number,
   humedad: Number, // Para el proyecto de Jeremy
   bomba: Boolean,
   timestamp: { type: Date, default: Date.now }
