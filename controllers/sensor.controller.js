@@ -2,6 +2,8 @@ const SensorData = require('../models/lectura.model'); // Tu modelo de Mongoose
 
 const postData = async (req, res) => {
     try {
+        console.log(req.body);
+        
         const data = new SensorData(req.body);
         await data.save();
 
